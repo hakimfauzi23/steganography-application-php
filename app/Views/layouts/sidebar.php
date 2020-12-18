@@ -25,9 +25,17 @@
               <li class="nav-item">
                 <a href="/stego" class="nav-link">
                   <i class="fa fa-envelope  nav-icon"></i>
-                  <p> Cyrpt A Message! </p>
+                  <p> Crypt A Message! </p>
                 </a>
               </li>
+
+              <li class="nav-item">
+                <a href="/StegoDec" class="nav-link">
+                  <i class="fa fa-envelope  nav-icon"></i>
+                  <p> DeCrypt A Message! </p>
+                </a>
+              </li>
+
 
         </ul>
       </nav>

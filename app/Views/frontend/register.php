@@ -20,6 +20,9 @@
 	<link rel="stylesheet" type="text/css" href="Login_v1/css/util.css">
 	<link rel="stylesheet" type="text/css" href="Login_v1/css/main.css">
 <!--===============================================================================================-->
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
 </head>
 <body>
 	
@@ -56,7 +59,10 @@
                     <option>Admin</option>
                     <option>Staff</option>
                   </select>
-          </div>
+					<hr>
+					<div class="g-recaptcha" data-sitekey="6Lc4vwsaAAAAAFNNQhRDOHdt64NsuCqWDtJqGtcG"></div>
+					<hr>
+          			</div>
 
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">

@@ -9,6 +9,7 @@ class Stego extends BaseController
  
         // Mendeklarasikan class ProductModel menggunakan $this->product
         $this->stego = new StegoModel();
+        $session = session();
         /* Catatan:
         Apa yang ada di dalam function construct ini nantinya bisa digunakan
         pada function di dalam class Product 
@@ -16,6 +17,7 @@ class Stego extends BaseController
     }
     public function index()
     {
+        $session = session();
         $data['stego'] = $this->stego->getProduct();
         echo view('layouts/header');
         echo view('layouts/navbar');
@@ -85,7 +87,7 @@ class Stego extends BaseController
                     return $newstring;
                 }
                 
-                $msg = $cipher; //To encrypt
+                $msg = $pesan; //To encrypt
                 $src = $avatar; //Start image
                 
                 $msg .='|'; //EOF sign, decided to use the pipe symbol to show our decrypter the end of the message
