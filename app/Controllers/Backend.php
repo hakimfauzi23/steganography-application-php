@@ -8,7 +8,17 @@ class Backend extends BaseController
     echo view('layouts/header');
     echo view('layouts/navbar');
     echo view('layouts/sidebar');
-    echo view('layouts/content');
+    echo view('dashboard/dashboard');
     echo view('layouts/footer');
+    }
+
+    public function stego()
+    {
+        echo view('layouts/header');
+        echo view('layouts/navbar');
+        echo view('layouts/sidebar');
+        echo view('stego/index');
+        echo view('layouts/footer');
+     
     }
 }

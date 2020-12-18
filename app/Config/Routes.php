@@ -33,6 +33,10 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Frontend::index');
 $routes->get('/register', 'Frontend::register');
 
+$routes->get('/backend', 'Backend::index');
+$routes->get('/stego', 'Stego::index');
+
+
 /**
  * --------------------------------------------------------------------
  * Additional Routing
